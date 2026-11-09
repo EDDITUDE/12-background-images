@@ -1,0 +1,168 @@
+/* ---------- Colors ---------- */
+:root {
+    --orange: #F4934A;
+    --blue: #1D93BB;
+    --teal: #BEE8E2;
+    --cream: #FCF8EC;
+    --text: #333333;
+    --code-red: #E5583A;
+    --code-bg: #FEF1E4;
+    --code-border: #F8D5BA;
+    --line: #EBD9B4;
+    --white: #FFFFFF;
+}
+
+/* ---------- Page ---------- */
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: var(--text);
+    background-color: var(--teal);
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* ---------- Header (orange bar) ---------- */
+.header-bar {
+    background-color: var(--orange);
+    border-bottom: 5px solid var(--blue);
+    padding: 35px 0 20px 0;
+}
+
+.site-title {
+    width: 775px;
+    margin: 0 auto 10px auto;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 56px;
+    color: var(--white);
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    width: 775px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 6px 18px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ---------- Hero photo ---------- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 590px;
+    border-bottom: 5px solid var(--blue);
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* ---------- Main content ---------- */
+.page-content {
+    width: 825px;
+    margin: 0 auto;
+    padding: 50px 0 200px 0;
+}
+
+/* ---------- White card ---------- */
+.card {
+    padding: 50px;
+    background-color: var(--cream);
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 44px;
+    color: var(--blue);
+}
+
+.card-subtitle {
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--code-red);
+}
+
+.card-text {
+    margin: 0 0 20px 0;
+    font-size: 21px;
+    line-height: 38px;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px 0;
+}
+
+.card-link {
+    color: var(--blue);
+    text-decoration: underline dotted;
+}
+
+/* ---------- Inline code ---------- */
+.code {
+    padding: 2px 8px;
+    border: 1px solid var(--code-border);
+    border-radius: 4px;
+    background-color: var(--code-bg);
+    font-family: "Source Code Pro", monospace;
+    font-size: 18px;
+    color: var(--code-red);
+}
+
+/* ---------- Blue callout ---------- */
+.callout {
+    margin-top: 37px;
+    padding: 40px 50px;
+    border-left: 7px solid var(--orange);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.callout-title {
+    margin: 0 0 15px 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.callout-text {
+    margin: 0;
+    font-size: 22px;
+    line-height: 38px;
+}
